@@ -20,6 +20,7 @@ import com.montadhr.bankkata.entities.Account;
 import com.montadhr.bankkata.entities.Client;
 import com.montadhr.bankkata.exceptions.NotFoundException;
 import com.montadhr.bankkata.services.IAccountService;
+import com.google.gson.Gson;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(controllers = AccountController.class )

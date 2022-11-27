@@ -20,9 +20,7 @@ public class AccountService implements IAccountService {
     private Map<String, Account> accounts = new HashMap<>();
     
     /**
-     * Create new Account for specific Client
-     * @param client
-     * @return
+     * {@inheritDoc}
      */
     @Override
     public Account create(Client client) {
@@ -32,10 +30,7 @@ public class AccountService implements IAccountService {
     }
     
     /**
-     * Get account by accountNumber
-     * @param accountNumber: number of account (like RIB)
-     * @return created Account
-     * @exception NotFoundException: Account not found
+     * {@inheritDoc}
      */
     @Override
     public Account getAccount(String accountNumber) {

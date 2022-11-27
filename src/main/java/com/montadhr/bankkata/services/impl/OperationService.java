@@ -27,11 +27,7 @@ public class OperationService implements IOperationService {
 	private IAccountService accountService;
 
 	/**
-	 * Statement printing
-	 * 
-	 * @param accountNumber
-	 * @return list of operations
-	 * @exception NotFoundException: Account not found
+	 * {@inheritDoc}
 	 */
 	@Override
 	public List<Operation> getOperationsHistory(String accountNumber) {
@@ -40,12 +36,7 @@ public class OperationService implements IOperationService {
 	}
 
 	/**
-	 * Deposit amout of money in account
-	 * 
-	 * @param dto
-	 * @return Operation: created deposit Operation
-	 * @exception NotAllowedException: Cannot withdrawal negative amount of money
-     * @exception NotFoundException: Account not found
+	 * {@inheritDoc}
 	 */
 	@Override
 	public Operation deposit(OperationDto dto) {
@@ -65,10 +56,7 @@ public class OperationService implements IOperationService {
 
 	/**
 	 * 
-	 * @param dto
-	 * @return Operation: created withdrawal Operation
-	 * @exception NotAllowedException: Cannot withdrawal negative amount of money
-     * @exception NotFoundException: Account not found
+	 * {@inheritDoc}
 	 */
 	@Override
 	public Operation withdrawal(OperationDto dto) {
